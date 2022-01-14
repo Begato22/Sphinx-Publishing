@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Education RC Task</title>
+  </head>
+  <body>
+    <!-- Pre Loader -->
+    <div id="preloader"></div>
+    <!--End of Pre Loader -->
+
+    <!-- Container -->
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <img
+          src="assets/img/audio_icon.png"
+          alt=""
+          class="header-icon-sound"
+          id="myAudio"
+        />
+        <div class="header-instructions">
+          <h3>Lisen and number. Then ask and answer.</h3>
+        </div>
+      </div>
+      <!--End of Header -->
+
+      <!-- Questions Body -->
+      <div class="container-box">
+        <div class="main">
+          <div class="Question">
+            <img src="assets/img/p21e4q1_1.png" alt="" class="Question-img" />
+            <select class="dropdown" id="Ques1" onchange="handleSelect()">
+              <option value="0" id="select-header"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="Question">
+            <img src="assets/img/p21e4q1_2.png" alt="" class="Question-img" />
+            <select class="dropdown" id="Ques2">
+              <option value="0" id="select-header"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="Question">
+            <img src="assets/img/p21e4q1_3.png" alt="" class="Question-img" />
+            <select class="dropdown" id="Ques3">
+              <option value="0" id="select-header"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="Question">
+            <img src="assets/img/p21e4q1_4.png" alt="" class="Question-img" />
+            <select class="dropdown" id="Ques4">
+              <option value="0" id="select-header"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="Question">
+            <img src="assets/img/p21e4q1_5.png" alt="" class="Question-img" />
+            <select class="dropdown" id="Ques5">
+              <option value="0" id="select-header"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Questions Body -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <button class="reset" id="reset">
+          <img src="assets/img/replay_icon.png" alt="" />
+        </button>
+        <audio controls>
+          <source src="test.mp3" type="audio/mp3" class="source" />
+        </audio>
+        <button class="show-ans">
+          <img src="assets/img/showAns_icon.png" alt="" />
+        </button>
+      </div>
+      <!-- End of Footer -->
+    </div>
+    <!--End Contaner -->
+
+    <script src="js/preloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/QuestionSel.js"></script>
+  </body>
+</html>
